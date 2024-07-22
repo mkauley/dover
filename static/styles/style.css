@@ -1,0 +1,247 @@
+/* Main body style*/
+body {
+	background: linear-gradient(90deg, black, maroon);
+	color: white;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+.doverBack {
+	width: 100%;  /* Define width and height as per requirement */
+	background-image: 
+	radial-gradient(circle at center, transparent, navy 90%, rgba(0,0,0,1)),
+	url(../imgs/skyline.jpg);
+	background-repeat: no-repeat, no-repeat; /* No repeat for both layers */
+	background-position: center, center;     /* Both layers centered */
+	background-size: cover, cover;           /* Both layers cover the entire container */
+}
+
+.item1 { 
+	/*header*/
+	grid-area: h; 
+}
+.item2 { 
+	/*menu*/
+	grid-area: m; 
+}
+.item3 { 
+	/*body*/
+	grid-area: b;
+	background: linear-gradient(90deg, black, darkslategrey); 
+	align-self: stretch;
+	border: 5px double darkred;
+	box-shadow: 5px 5px 5px 2px black, 5px 5px 5px 2px midnightblue;
+}
+
+.item4 { 
+	/*right side*/
+	grid-area: r;
+}
+
+.item5 { 
+	/*footer*/
+	grid-area: f;
+}
+
+.grid-container {
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-areas:
+	'h h h h h h h h h h'
+	'm b b b b b b b b r'
+	'm f f f f f f f f r';
+  gap: 3px;
+  padding: 5px 0;
+  border: 3px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* h1, h2, h3 Styles */
+h1 {
+	color: red;
+	font-size: 42px;
+	text-align: center;
+	text-shadow: 6px 6px 8px black, 0 0 45px grey, 0 0 15px white;
+}
+
+h2 {
+	font-size: 34px;
+	font-weight: bold;
+	color: snow;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 6px 6px 8px grey, 0 0 45px gold;
+	margin: auto;
+	text-decoration: none;}
+
+h3 {
+	font-size: 24px;
+	color: snow;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 4px 4px 6px grey, 0 0 45px gold;
+	margin: auto;
+	text-decoration: none;
+}
+
+h4 {
+	font-size: 18px;
+	color: snow;
+	text-align: justify;
+	text-justify: inter-word;
+	padding: 20px;
+}
+
+h5 {
+	font-size: 24px;
+	color: snow;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+}
+
+h6 {
+	color: snow;
+	font-size: 12px;
+	text-align: center;
+}
+
+/* Link Styles */
+a:link {
+	color: slategrey;
+	text-decoration: none;
+}
+
+a:visited {
+	color: darkgrey;
+}
+
+a:hover {
+	color: darkslategrey;
+}
+
+a:active {
+	color: green;
+}
+
+.contentBox{
+	background: linear-gradient(90deg, black, darkslategrey);
+	border: 5px double red;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 5px 2px black, 5px 5px 5px 2px midnightblue;
+}
+
+.imgBox{
+	max-width: 200px;
+	padding: 10px;
+}
+
+.buttonBox{
+	background: transparent;
+	vertical-align: top;
+	position: relative;	
+	display:inline-block;
+	height: auto;
+	max-width: 200px;
+	border: 1px;
+	margin: auto;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+	text-shadow: 4px 4px 6px black, 0 0 45px red;
+	border-top-left-radius: 15% 50%;	
+	border-top-right-radius: 15% 50%;	
+	border-bottom-left-radius: 15% 50%;	
+	border-bottom-right-radius: 15% 50%;
+}
+
+.buttonBox:hover {
+	color: silver;
+	text-shadow: 4px 4px 6px grey, 0 0 45px gold;
+	border: 1px;
+}
+
+.headerButton{
+	height: auto;
+	width: 500px;
+	border: 0px solid;
+	color: gainsboro;
+    font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 4px 4px 6px black, 0 0 45px red;
+	margin: auto;
+	text-decoration: none;
+}
+
+.headerButton:hover {
+	color: silver;
+	text-shadow: 4px 4px 6px grey, 0 0 45px red;
+	border: 1px;
+}
+
+.regBox {
+	width: 100%;
+}
+
+.regSubBox{
+	background-color: black;
+	border: 1px solid;
+	border-color: white;
+	width: 96%;
+	display: inline-block;
+	padding: 2px;
+}
+
+.regButton{
+	background-color: black;
+	border: 1px solid;
+	border-color: white;
+	width: 48%;
+	display: inline-block;
+	padding: 2px;
+}
+
+.regButtonLink{
+	background-color: black;
+	border: 1px solid;
+	border-color: white;
+	width: 48%;
+	display: inline-block;
+	padding: 2px;
+}
+
+.regButtonLink:hover {
+	background-color: ivory;
+	border-color: black;
+}
+
+.lineBox{
+	width: 75%;
+	height: 1px;
+	border: 3px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Spacer box, used to add in extra space */
+.spacerBox{
+	width: 90%;
+	height: 40px;
+}
+
+/* Specific Image Formats */
+.logo_discord {
+	height: 22px;
+}
+

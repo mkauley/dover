@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Tag -->
+<head>
+	<meta charset="utf-8">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body>
+    <div class="grid-container">
+      <div class="item1">
+        <a href="/" class="headerButton">New Dover</a>
+        <h2>A By Night Studios Troupe Game</h2>
+        <h3>...</h3>
+      </div>
+      <div class="item2">
+        <a href="/" class="buttonBox">Home</a><br>
+        <a href="https://vamp.bynightstudios.com/" class="buttonBox">Vamp BNS SRD</a><br>
+        <a href="https://bynightstudios.com/legacy-eratta/" class="buttonBox">Official Errata</a><br>
+        <a href="/setting.html" class="buttonBox">Setting Document</a><br>
+        <a href="/houserules.html" class="buttonBox">House Rules</a><br>
+        <a href="/schedule.html" class="buttonBox">Schedule</a><br>
+        <a href="https://discord.gg/Ye5Wgcjyh3" class="buttonBox">Join Our <img src="{{ url_for('static',filename='imgs/discordlogo.png') }}" class="logo_discord"></a><br>
+        <div class="spacerBox"></div>
+
+      </div>
+      <div class="item3">
+        {% block content %}{% endblock %}
+      </div>  
+      <div class="item4">
+      </div>
+      <div class="item5">
+        <div class="contentBox">
+            <h6>
+                Website designed by <a href="https://www.arcanematrix.com">Arcane Matrix</a><br><br>
+                <a href="https://www.paradoxinteractive.com/games/world-of-darkness/about">
+                  Portions of the materials are the copyrights and trademarks of Paradox Interactive, and are<br> 
+                  used with permission. All rights reserved. For more information please visit Paradox Interactive.
+                </a>
+            </h6>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
