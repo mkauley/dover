@@ -26,7 +26,6 @@ body {
 .item3 { 
 	/*body*/
 	grid-area: b;
-	background: linear-gradient(90deg, black, darkslategrey); 
 	align-self: stretch;
 	border: 5px double darkred;
 	box-shadow: 5px 5px 5px 2px black, 5px 5px 5px 2px midnightblue;
@@ -139,6 +138,15 @@ a:active {
 	box-shadow: 5px 5px 5px 2px black, 5px 5px 5px 2px midnightblue;
 }
 
+.innerContentBox{
+	background: linear-gradient(90deg, black, darkslategrey);
+	border: 1px single red;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 5px 2px black, 5px 5px 5px 2px midnightblue;
+}
+
 .imgBox{
 	max-width: 200px;
 	padding: 10px;
@@ -245,3 +253,11 @@ a:active {
 	height: 22px;
 }
 
+iframe {
+	display: block;
+	margin: auto;
+	height: 1000px;
+	width: 800px;
+	background: black;
+	border: 0;
+}

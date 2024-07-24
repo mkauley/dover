@@ -13,13 +13,15 @@ def indexPage():
 def schedule():
     return render_template('schedule.html', title = 'Game Schedules')
 
-@dover.route('/setting.html')
-def setting():
-    return render_template('setting.html', title = 'Setting Document')
-
-@dover.route('/houserules.html')
-def houserules():
-    return render_template('houserules.html', title = 'House Rules')
+@dover.route('/docs/<page_type>')
+def docs_page(page_type):
+    if page_type == 'setting':
+        page_title = 'Setting Guide'
+        page_frame = 'https://docs.google.com/document/d/1TDTreos86OU8qP7nBU-jgVxFgf_PDH-aNohtZvMPeiE/pub?embedded=true'
+    elif page_type =='houserules':
+        page_title = 'House Rules'
+        page_frame = 'https://docs.google.com/document/d/1HljO2WZ1dKUEDkkcUWdbelbRtR2MQGsfsZeFK01WbKE/pub?embedded=true'
+    return render_template('docs.html', title = page_title, frame = page_frame)
 
 if __name__ == '__main__':
     dover.run(debug=True)

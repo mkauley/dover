@@ -9,7 +9,7 @@
 <body>
     <div class="grid-container">
       <div class="item1">
-        <a href="/" class="headerButton">New Dover</a>
+        <a href="/" class="headerButton">New Dover: The Young Bloods</a>
         <h2>A By Night Studios Troupe Game</h2>
         <h3>...</h3>
       </div>
@@ -17,8 +17,8 @@
         <a href="/" class="buttonBox">Home</a><br>
         <a href="https://vamp.bynightstudios.com/" class="buttonBox">Vamp BNS SRD</a><br>
         <a href="https://bynightstudios.com/legacy-eratta/" class="buttonBox">Official Errata</a><br>
-        <a href="/setting.html" class="buttonBox">Setting Document</a><br>
-        <a href="/houserules.html" class="buttonBox">House Rules</a><br>
+        <a href ="{{ url_for('docs_page',page_type='setting') }}" class="buttonBox">Setting Document</a><br>
+        <a href ="{{ url_for('docs_page',page_type='houserules') }}" class="buttonBox">House Rules</a><br>
         <a href="/schedule.html" class="buttonBox">Schedule</a><br>
         <a href="https://discord.gg/Ye5Wgcjyh3" class="buttonBox">Join Our <img src="{{ url_for('static',filename='imgs/discordlogo.png') }}" class="logo_discord"></a><br>
         <div class="spacerBox"></div>
